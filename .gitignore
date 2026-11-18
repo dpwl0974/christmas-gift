@@ -1,0 +1,11 @@
+# 개인 사진 (저장소·배포 모두 제외. site/ 밖에 보관)
+private/
+
+# 개인 개발 환경 설정
+.claude/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

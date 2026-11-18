@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>🎁 크리스마스 선물이 도착했습니다</title>
+<meta name="description" content="옞이 보낸 크리스마스 선물. 심사를 통과해야만 열 수 있어요.">
+<meta property="og:title" content="🎁 크리스마스 선물이 도착했습니다">
+<meta property="og:description" content="옞이 보낸 선물. 심사를 통과한 사람만 받을 수 있어요.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yeaji-christmas.netlify.app/">
+<meta property="og:image" content="https://yeaji-christmas.netlify.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Jua&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="snow" aria-hidden="true"></canvas>
+
+  <!-- 동화책 배경: 밤하늘 + 눈 언덕 + 작은 집 -->
+  <svg class="scenery" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <path d="M0 180 Q 200 110 420 170 T 820 150 T 1200 160 V300 H0Z" fill="#c9d6ee"/>
+    <g transform="translate(930 92)">
+      <rect x="0" y="40" width="80" height="58" fill="#8b5a3c"/>
+      <path d="M-10 44 L40 4 L90 44Z" fill="#f4f1ea"/>
+      <rect x="28" y="60" width="22" height="38" fill="#5b3a29"/>
+      <rect x="56" y="54" width="16" height="16" fill="#ffd36e"/>
+      <rect x="62" y="0" width="12" height="26" fill="#6b4532"/>
+    </g>
+    <g fill="#2f5d50">
+      <path d="M150 165 l22 -55 l22 55z"/><path d="M190 170 l16 -40 l16 40z"/>
+      <path d="M1080 160 l20 -50 l20 50z"/><path d="M1120 165 l14 -36 l14 36z"/>
+    </g>
+    <path d="M0 230 Q 300 170 600 220 T 1200 210 V300 H0Z" fill="#eef2fa"/>
+  </svg>
+
+  <main id="stage" aria-live="polite"></main>
+
+  <canvas id="fireworks" aria-hidden="true"></canvas>
+
+  <script src="js/config.js"></script>
+  <script src="js/mangkko.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/trees.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
